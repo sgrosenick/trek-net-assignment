@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samuelgrosenick/Desktop/trek-net-test-grosenick/trek-net-test/trek-net-test.csproj",
+      "projectUniqueName": "/Users/samuelgrosenick/Desktop/trek/trek-net-assignment/trek-net-test/trek-net-test.csproj",
       "projectName": "trek-net-test",
-      "projectPath": "/Users/samuelgrosenick/Desktop/trek-net-test-grosenick/trek-net-test/trek-net-test.csproj",
+      "projectPath": "/Users/samuelgrosenick/Desktop/trek/trek-net-assignment/trek-net-test/trek-net-test.csproj",
       "packagesPath": "/Users/samuelgrosenick/.nuget/packages/",
-      "outputPath": "/Users/samuelgrosenick/Desktop/trek-net-test-grosenick/trek-net-test/obj/",
+      "outputPath": "/Users/samuelgrosenick/Desktop/trek/trek-net-assignment/trek-net-test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/samuelgrosenick/.config/NuGet/NuGet.Config"

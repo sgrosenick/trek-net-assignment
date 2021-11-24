@@ -6,17 +6,6 @@
 
 <div>
     <h3 class="display-4">Trek Bike Combinations</h3>
-    <center>
-        <form asp-controller="Home" asp-action="Index">
-            <table>
-                <tr>
-                    <td>Combination</td>
-                    <td>Count</td>
-                </tr>
-            </table>
-            <hr />
-        </form>
-    </center>
     @if (Model != null && Model.Count > 0)
     {
         <table class="table table-bordered table-striped table-sm">
@@ -31,7 +20,7 @@
                 {
                     <tr>
                         <td>@item.Combination</td>
-                        <td>@item.FamilyCount.ToString()</td>
+                        <td>@item.FamilyCount.ToString("N0")</td>
                     </tr>
                 }
             </tbody>

@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{99B54C85-C997-4517-869F-B34A1526CD9A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="trek-net-test/Models/Bikes.cs">
+    <Files>
+      <File FileName="trek-net-test/Controllers/HomeController.cs" Line="62" Column="1" />
+      <File FileName="trek-net-test/Models/Bikes.cs" Line="12" Column="1" />
+      <File FileName="trek-net-test/Views/Home/Index.cshtml" Line="37" Column="21" />
+      <File FileName="trek-net-test/Models/BikeCombination.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="trek-net-test" expanded="True">
+            <Node name="trek-net-test" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Bikes.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.trek-net-test PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -27,17 +27,22 @@ namespace trek_net_test.Controllers
 
             bikes = await _trekApiService.GetBikes();
 
+            // I decided it would be easier to compare all combinations if I flattned
+            // the data out of lists, that way it would be easier to group
+            List<string> bikeStrings = new List<string>();
+            foreach (Bikes b in bikes)
+            {
+                b.bikes.Sort();
+                string newString = String.Join(", ", b.bikes);
+                bikeStrings.Add(newString);
+            };
 
-            // Got stuck trying to set up group of new bike combinations. I think the issue is with my select statement,
-            // I would want to do some testing to make sure the GroupBy is actually grouping the bikes by distinct lists as well
-            // Given more time, my path forward would be to break up this query a bit to ensure I am getting the values that I'm
-            // expecting and then find what is causing the issue when trying to bring it all together.
-            List<BikeCombination> bikeCombinations = (List<BikeCombination>)bikes
-                .GroupBy(b => b.bikes)
-                .Select(g => new BikeCombination { Combination = g.ToString(), FamilyCount = g.Count() })
-                .ToList()
+            List<BikeCombination> bikeCombinations = (List<BikeCombination>)bikeStrings
+                .GroupBy(b => b)
+                .Select(g => new BikeCombination { Combination = g.Key, FamilyCount = g.Count() })
                 .OrderByDescending(o => o.FamilyCount)
-                .Take(21);
+                .Take(20)
+                .ToList();
 
             return View(bikeCombinations);
         }
